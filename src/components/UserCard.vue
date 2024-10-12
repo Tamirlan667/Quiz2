@@ -4,7 +4,6 @@
     <h3>{{ user.name }}</h3>
     <p>{{ user.email }}</p>
     <slot></slot>
-    <!-- Слот для дополнительного контента -->
   </div>
 </template>
 

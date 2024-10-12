@@ -9,11 +9,9 @@
       <input v-model="user.name" />
     </label>
     <button @click="updateUser">Update User</button>
-    <!-- Кнопка для обновления -->
     <div v-if="successMessage" class="success-message">
       {{ successMessage }}
     </div>
-    <!-- Уведомление об успешном обновлении -->
   </div>
 </template>
 
@@ -23,7 +21,7 @@ export default {
   data() {
     return {
       user: { id: this.id, name: "", email: "" },
-      successMessage: "", // Сообщение об успешном обновлении
+      successMessage: "",
     };
   },
   mounted() {
